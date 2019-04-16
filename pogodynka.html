@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pogodynka</title>
+        <link rel="stylesheet" href="pogodynka.css">
+    </head>
+    <body>
+        <div class="gridContener">
+            <div class="time"><span id="time"></span></div>
+            
+            <div class="temperature">
+                <canvas id="temperatureChamber" width="600" height="300"></canvas>
+            </div>
+            
+            <div class="data">
+                <div id="symbol"></div>
+                <div id="data"></div>
+                <span id="pressure">1000 hPa</span>
+                <span id="temperature">8 <sup>o</sup>C</span>
+            </div>
+            
+            <div class="windDirection">
+                <div class="windCompasBox">
+                    <p class="N">N</p>
+                <p class="W">W</p><p class="E">E</p>
+                    <p class="S">S</p>
+                <div id="windDirectionWindow">
+                    <span id="windDirectionData">
+                        </span>
+                    <span id="windDirection">
+                        <span class="arrowWind"></span>
+                    </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pressureChamber">
+                <canvas id="pressureChamber" width="600" height="300"></canvas>
+            </div>
+            
+            <div class="clouds">
+            <div class="cloud">
+                <div class="cloudiness">Zachmurzenie <span id="cloudiness">0%</span></div>
+
+                <div class="highClouds">Wysokie chmury <span id="highClouds">100%</span></div>
+
+                <div class="mediumClouds">Średnie chmury <span id="mediumClouds">100%</span></div>
+
+                <div class="lowClouds">Niskie chmury <span id="lowClouds">100%</span></div>    
+            </div>
+            </div>
+            
+            <div> <span id="dewpointTemperature">-0.5 <sup>o</sup>C</span></div>
+            
+            <div>Mgła <span id="fog">100%</span></div>
+            
+            <div class="humidity">Wilgotność <span id="humidity">100%</span></div>
+            
+            <div class="windSpeed">Szynkość wiatru <span id="windSpeed">3.0 Mph</span></div>
+            
+            <div class="precipitation">Opady <span id="precipitation">0 mm</span></div>
+        </div>
+        <script src="pogodynka.js"></script>
+    </body>
+</html>
